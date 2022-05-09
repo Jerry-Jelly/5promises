@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+
+
+
+/* 배경 */
+main{height:1300px;}
+.head{
+	position: relative;
+	width:100%; height:470px;
+	overflow: hidden;
+	background: #333;
+	font-family: '나눔바른고딕';
+}
+.head_title > li{
+	position: absolute;
+	top:50%; left:50%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+	color: #ccc;
+	letter-spacing: 5px;
+}
+.head_title > li:last-child{
+	margin-top:50px;
+	font-size: 48px;
+	color: #fff;
+	letter-spacing: 10px;
+}
+.head img{
+    width:1920px;
+	opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+
+.head_txt{
+	position: relative;
+	top:-40px;
+	width:1200px;
+	z-index: 10;
+	margin: 0px auto;
+	display: flex;
+}
+.head_txt > li{
+	width:240px;
+	text-align: center;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.promise01,
+.promise02,
+.promise03,
+.promise04,
+.promise05,
+.promise06,
+.promise07{
+	display: block;
+	font-size:16px;
+	padding:10px 0px;
+	cursor: pointer;
+}
+.promise01{
+	background-color:#2b75e0;
+	color: #fff;
+}
+.promise01,
+.promise02,
+.promise03,
+.promise04,
+.promise05,
+.promise06{
+	border-right: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.promise_txt01,
+.promise_txt02,
+.promise_txt03,
+.promise_txt04,
+.promise_txt05,
+.promise_txt06,
+.promise_txt07{
+	position: absolute;
+	top:40px; left:0px;
+	width:1200px; height:730px;
+	background-color:#fff;
+	border-top: 1px solid #ccc;
+	box-sizing: border-box;
+	font-size: 80px;
+	font-weight: bold;
+	line-height:145px;
+	color:#2b75e0;
+}
+.promise_txt01{z-index: 8;}
+
+.promise_txt02,
+.promise_txt03,
+.promise_txt04,
+.promise_txt05,
+.promise_txt06{z-index: 2;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 푸터 */
+footer{border-top: 1px solid #ccc;}

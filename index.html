@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>다섯가지약속 치과 - 김지우의 포트폴리오</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+  <!-- jquery -->
+  <script src="./js/jquery-1.12.3.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/script2.j2.js"></script>
+
+  <!-- 아이콘 폰트 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./images/favicon.ico">
+
+  <style>
+    *{margin:0px; padding:0px;}
+    ul, li, ol{list-style: none;}
+    a{
+      color:#333;
+      text-decoration:none;
+      letter-spacing: 0.05em;
+    }
+    body{
+      position: relative;
+      width:100%;
+      color:#333;
+      background: #fff;
+      font-size: 14px;
+      line-height: 1.25;
+      font-family: '나눔스퀘어라운드';
+      overflow-x: hidden;
+    }
+    main{position: relative;}
+    @font-face{
+      src:url('./font/NanumSquareRoundR.ttf');
+      font-family: "나눔스퀘어라운드";
+    }
+    @font-face{
+      src:url('./font/NanumBarunGothic.ttf');
+      font-family: "나눔바른고딕";
+    }
+  </style>
+</head>
+<body>
+
+  <aside>
+    <div class="aside01">
+      <p>QUICK<br>MENU</p>
+    </div>
+
+    <div class="aside02">
+      <a href="./html/introduce02.html" title="진료시간">
+        <i class="fas fa-clock"></i><br>진료시간
+      </a>
+    </div>
+
+    <div class="aside03">
+      <a href="./html/introduce05.html" title="오시는길">
+        <i class="fas fa-map"></i><br>오시는길
+      </a>
+    </div>
+
+    <div class="aside04">
+      <a href="https://map.naver.com/v5/entry/place/1844022638?c=14119014.5867678,4528130.1805570,13,0,0,0,dh&placePath=%2Fbooking%3FbookingRedirectUrl=https:%2F%2Fm.booking.naver.com%2Fbooking%2F13%2Fbizes%2F274138%26entry=plt" title="네이버예약"><span>N</span><br>네이버예약</a>
+    </div>
+
+    <div class="aside05">
+      <a href="#" title="맨 위로"><i class="fas fa-angle-up"></i><br>TOP</a>
+    </div>
+
+  </aside>
+
+<header>
+  <div class="h_inner">
+    <h1>
+      <a href="#" title="메인페이지 바로가기">
+        <img src="./images/logo.png" alt="메인로고">
+      </a>
+    </h1>
+
+    <nav>
+      <ul>
+        <li><a href="./html/promise.html" title="다섯가지약속">다섯가지약속</a>
+          <ul class="sub">
+            <li><a href="./html/promise.html" title="첫번째 약속">첫번째 약속</a></li>
+            <li><a href="./html/promise02.html" title="두번째 약속">두번째 약속</a></li>
+            <li><a href="./html/promise03.html" title="세번째 약속">세번째 약속</a></li>
+            <li><a href="./html/promise04.html" title="네번째 약속">네번째 약속</a></li>
+            <li><a href="./html/promise05.html" title="다섯번째 약속">다섯번째 약속</a></li>
+          </ul>
+        </li>
+        <li><a href="./html/introduce.html" title="병원소개">병원소개</a>
+          <ul class="sub">
+            <li><a href="./html/introduce.html" title="의료진소개">의료진소개</a></li>
+            <li><a href="./html/introduce02.html" title="진료안내">진료안내</a></li>
+            <li><a href="./html/introduce03.html" title="병원 둘러보기">병원 둘러보기</a></li>
+            <li><a href="./html/introduce04.html" title="장비소개">장비소개</a></li>
+            <li><a href="./html/introduce05.html" title="오시는 길">오시는 길</a></li>
+            <li><a href="./html/introduce06.html" title="공지사항">공지사항</a></li>
+            <li><a href="./html/introduce07.html" title="이벤트">이벤트</a></li>
+          </ul>
+        </li>
+        <li><a href="./html/implant.html" title="임플란트">임플란트</a>
+          <ul class="sub">
+            <li><a href="./html/implant.html" title="임플란트란?">임플란트란?</a></li>
+            <li><a href="./html/implant02.html" title="우리병원 임플란트">우리병원 임플란트</a></li>
+            <li><a href="./html/implant03.html" title="시술 전후비교">시술 전후비교</a></li>
+          </ul>
+        </li>
+        <li><a href="./html/beauty.html" title="심미보철">심미보철</a>
+          <ul class="sub">
+            <li><a href="./html/beauty.html" title="심미보철이란?">심미보철이란?</a></li>
+            <li><a href="./html/beauty02.html" title="우리병원 심미보철">우리병원 심미보철</a></li>
+            <li><a href="./html/beauty03.html" title="시술 전후비교">시술 전후비교</a></li>
+          </ul>
+        </li>
+        <li><a href="./html/normal.html" title="일반진료">일반진료</a>
+          <ul class="sub">
+            <li><a href="./html/normal.html" title="충치치료">충치치료</a></li>
+            <li><a href="./html/normal02.html" title="신경치료">신경치료</a></li>
+            <li><a href="./html/normal03.html" title="보철치료">보철치료</a></li>
+            <li><a href="./html/normal04.html" title="사랑니발치">사랑니발치</a></li>
+            <li><a href="./html/normal05.html" title="구강검진">구강검진</a></li>
+            <li><a href="./html/normal06.html" title="보톡스">보톡스</a></li>
+          </ul>
+        </li>
+        <li><a href="./html/community.html" title="커뮤니티">커뮤니티</a>
+          <ul class="sub">
+            <li><a href="./html/community.html" title="FAQ">FAQ</a></li>
+            <li><a href="./html/community02.html" title="상담 및 문의">상담 및 문의</a></li>
+            <li><a href="./html/community03.html" title="예약 및 상담신청">예약 및 상담신청</a></li>
+            <li><a href="./html/community04.html" title="치료후기">치료후기</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="phone">
+      <p><i class="fas fa-phone"></i>&nbsp;
+        031-963-2080</p>
+    </div>
+
+    <div class="square"></div>
+  </div>
+</header>
+
+
+
+
+
+<main>
+  <div class="video">
+    <ul class="video_txt">
+      <li>10년 이상 경력의 대학 병원 출신 의료진, 최신 디지털 의료장비</li>
+      <li>정확한 진료, 정직한 치과</li>
+      <li>환자들의 치과에 대한 두려움을 깊이 공감하며, 최대한 적은 통증으로</li>
+      <li>과잉 진료없이 편안하게 치료를 받고 가실 수 있도록 노력합니다.</li>
+    </ul>
+
+    <video muted autoplay loop="infinite">
+    <source src="./video/dental.mov">
+    </video>
+  </div>
+
+
+
+
+
+  <article class="info">
+    <div class="info_inner">
+      <h4>The 5 promises dental clinic</h4>
+      <h2><span>다섯가지약속 치과</span> 진료정보</h2>
+      <ul class="info_con">
+
+        <li class="info_con01">
+          <a href="./html/implant.html" title="임플란트">
+            <img src="./images/info_img00.jpg" alt="임플란트">
+          </a>
+          <p>임플란트</p>
+          <p>임플란트는 가장 마지막 선택이 될 수 있도록 노력합니다.
+            장기적인 예후까지 생각하는 꼼꼼한 임플란트</p>
+          <p>view more <span>&#x2192;</span></p>
+        </li>
+
+        <li class="info_con02">
+          <a href="./html/beauty.html" title="심미치료">
+            <img src="./images/info_img02.jpg" alt="심미치료">
+          </a>
+          <p>심미치료</p>
+          <p>배열, 색상, 모양까지 바꿔<br>
+            환자의 아름다운 미소를 디자인 해드리는 심미치료</p>
+          <p>view more <span>&#x2192;</span></p>
+        </li>
+
+        <li class="info_con03">
+          <a href="./html/normal04.html" title="사랑니치료">
+            <img src="./images/info_img03.jpg" alt="사랑니치료">
+          </a>
+          <p>사랑니치료</p>
+          <p>빠르고 정확한 시술로<br>
+            출혈과 붓기, 통증을 최소화하는<br>사랑니치료</p>
+          <p>view more <span>&#x2192;</span></p>
+        </li>
+
+        <li class="info_con04">
+          <a href="./html/normal.html" title="충치치료">
+            <img src="./images/info_img04.jpg" alt="충치치료">
+          </a>
+          <p>충치치료</p>
+          <p>과잉진료 없이 꼭 필요한 시술만<br>권하여
+            자연치아를 최대한 보존하는 충치치료</p>
+          <p>view more <span>&#x2192;</span></p>
+        </li>
+
+        <li class="info_con05">
+          <a href="./html/normal05.html" title="구강검진">
+            <img src="./images/info_img05.jpg" alt="구강검진">
+          </a>
+          <p>구강검진</p>
+          <p>꼼꼼하고 정기적인 구강검진을 통해
+            미리미리 챙기는 구강건강<br>*보험적용가능</p>
+          <p>view more <span>&#x2192;</span></p>
+        </li>
+        
+      </ul>
+    </div>
+  </article>
+
+
+
+
+
+  <article class="slide">
+    <ul>
+      <li><img src="./images/slide001.jpg" alt="아프지 않은 치과"></li>
+      <li><img src="./images/slide002.jpg" alt="정확하고 안전한 진료"></li>
+      <li><img src="./images/slide003.jpg" alt="대학병원출신 의료진"></li>
+      <li><img src="./images/slide004.jpg" alt="보증제도"></li>
+      <li><img src="./images/slide005.jpg" alt="멸균시스템"></li>
+    </ul>
+  </article>
+
+
+
+
+
+  <div class="doctor">
+    <ul class="doc_txt">
+      <img src="./images/backlogo.png" alt="배경로고">
+      <li>대학병원 교수출신 대표원장님과 의료진</li>
+      <li>
+        <p>손끝의 숙련도에 따라 결과가 달라지는 치과 치료,</p>
+        <p>10년 이상 경력의 교수출신 대표원장님과 보건복지부 인증 전문의들로만</p>
+        <p>구성된 의료진이 한차원 높은 의료서비스를 제공합니다.</p>
+      </li>
+    </ul>
+    <ul class="doc_img">
+      <li><img src="./images/docs.png" alt="의사이미지"></li>
+    </ul>
+    <img src="./images/doc_img_back.jpg" alt="띠지">
+  </div>
+
+
+
+
+ 
+  <div class="event">
+    <h4>The 5 promises dental clinic</h4>
+    <h2><span>다섯가지약속 치과</span> 이벤트</h2>
+    <a href="./html/introduce07.html" title="이벤트 더보기" class="event_more">
+      더보기&nbsp;<i class="fas fa-angle-right"></i>
+    </a>
+    <ul class="event_img">
+      <li>
+        <a href="./html/introduce07.html" title="치아교정">
+          <img src="./images/event01.png" alt="치아교정">
+        </a>
+        <p>어메이징 치아교정😍</p>
+        <p>진단비무료! 발치없는 메탈교정</p>
+      </li>
+      <li>
+        <a href="./html/introduce07.html" title="치아미백">
+          <img src="./images/event02.png" alt="치아미백">
+        </a>
+        <p>새하얀 건치미소😁🌟</p>
+        <p>하루만에 변신~ 화이트닝 패키지</p>
+      </li>
+      <li>
+        <a href="./html/introduce07.html" title="치아교정">
+          <img src="./images/event03.png" alt="치아교정">
+        </a>
+        <p>치아교정 아직도 고민하세요?🤔</p>
+        <p>나에게 맞는 교정으로 티안나게 예뻐지자!</p>
+      </li>
+      <li>
+        <a href="./html/introduce07.html" title="임플란트">
+          <img src="./images/event04.png" alt="임플란트">
+        </a>
+        <p>임플란트🦷미루지 마세요😱</p>
+        <p>진단비무료! 발치없는 메탈교정</p>
+      </li>
+      <li>
+        <a href="./html/introduce07.html" title="보톡스">
+          <img src="./images/event05.png" alt="보톡스">
+        </a>
+        <p>보톡스도 전문적인 곳에서😏</p>
+        <p>이번 봄, 갸름한 턱선으로 변신~</p>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+
+  <div class="inside">
+    <div class="inside_inner">
+      <h4>The 5 promises dental clinic</h4>
+      <h2><span>다섯가지약속 치과</span> 내부 둘러보기</h2>
+
+      <ul class="inside_img">
+        <li><a href="./html/introduce03.html" title="로비">
+          <img src="./images/inside01.jpg" alt="inside01" class="inside01">
+        </a></li>
+        <li><a href="./html/introduce03.html" title="인포데스크">
+          <img src="./images/inside02.jpg" alt="inside02" class="inside02">
+        </a></li>
+        <li><a href="./html/introduce03.html" title="inside03">
+          <img src="./images/inside03.jpg" alt="inside03" class="inside03">
+        </a></li>
+        <li><a href="./html/introduce03.html" title="inside04">
+          <img src="./images/inside04.jpg" alt="inside04" class="inside04">
+        </a></li>
+        <li><a href="./html/introduce03.html" title="inside09">
+          <img src="./images/inside09.jpg" alt="inside09" class="inside05">
+        </a></li>
+        <li><a href="./html/introduce03.html" title="inside06">
+          <img src="./images/inside06.jpg" alt="inside06" class="inside06">
+        </a></li>
+        <li><a href="./html/introduce03.html" title="inside07">
+          <img src="./images/inside07.jpg" alt="inside07" class="inside07">
+        </a></li>
+        <li><a href="./html/introduce03.html" title="inside08">
+          <img src="./images/inside08.jpg" alt="inside08" class="inside08">
+        </a></li>
+        <li><a href="./html/introduce03.html" title="inside05">
+          <img src="./images/inside05.jpg" alt="inside05" class="inside09">
+        </a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="time">
+    <ul class="time_inner">
+      <li><img src="./images/time01.jpg" alt="내부"></li>
+      <li>
+        <img src="./images/clock.png" alt="시계아이콘"><br>
+        진료시간 안내<hr>
+        <p>화 수 금 10:00 - 19:00</p>
+        <p>월&emsp;&ensp;목 10:00 - 20:30</p>
+        <p>토 요 일 10:00 - 14:00</p>
+        <p>※ 일요일 / 공휴일 휴진</p>
+        <a href="./html/introduce05.html" title="오시는 길">오시는 길</a>
+      </li>
+    </ul>
+  </div>
+</main>
+
+
+
+
+
+<footer>
+  <ul>
+    <li><img src="./images/logo.png" alt="로고"></li>
+    <li>
+      대표자: 이수연&emsp;|&emsp;사업자등록번호: 501-25-51005<br>
+      E-MAIL: 5-promise@naver.com&emsp;|&emsp;FAX: 031-963-2081&emsp;|&emsp;대표전화: 031-963-2080<br>
+      <address>주소 : 경기도 고양시 덕양구 화중로 104번길 30 한성리츠빌 203호</address>
+      <p>2019 다섯가지약속치과의원 Co. Ltd. All rights reserved.</p>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

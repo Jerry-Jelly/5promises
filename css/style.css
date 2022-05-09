@@ -1,0 +1,533 @@
+@charset "utf-8";
+
+
+
+
+/* 어사이드 */
+aside{
+  position: fixed;
+  right:0%; top:24%;
+  width:90px; height:360px;
+  z-index: 1000;
+  text-align: center;
+  color: #fff;
+  background: #fff;
+  font-family: '나눔바른고딕';
+  font-size: 15px;
+  border: 1px solid #ccc;
+}
+.aside01, .aside05{
+  height:60px;
+  background:blue;
+}
+.aside01 > p,
+.aside05 > a{
+  position: relative;
+  top:12px;
+}
+.aside02, .aside03, .aside04{
+  height:80px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.aside02 > a,
+.aside03 > a,
+.aside04 > a{
+  display: block;
+  position: relative;
+  top:15px;
+}
+.aside02 i,
+.aside03 i{
+  color:navy;
+  font-size: 25px;
+}
+.aside04 span{
+  font-size: 25px;
+  font-weight:bold;
+  color: limegreen;
+}
+.aside05 > a{color: #fff;}
+
+
+
+
+
+header{
+  position: fixed;
+  width:100%; height:100px;
+  z-index: 1000;
+  /* background-color: rgba(255,255,255,.5); */
+  background: #fff;
+  box-shadow: 5px 5px 5px rgba(100,100,100,.3);
+}
+.h_inner{
+  width:1400px; height:100px;
+  display: flex;
+  margin: 0px auto;
+}
+.h_inner > h1{
+	position: relative;
+	top:30px; left:0px;
+}
+.h_inner img{width:200px;}
+.phone{
+	position: relative;
+	top:30px; right:0px;
+	width:200px; height:40px;
+	background:#2b75e0;
+	border-radius: 20px;
+	color:#fff;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+}
+.phone > p{margin-top:11.5px;}
+.phone i{font-size: 15px;}
+nav{
+	width:1200px;
+	/* background-color: gold; */
+	margin: 0px auto;
+  font-size: 17px;
+  font-weight: bold;
+}
+nav > ul{
+	display: flex;
+	margin: 0px auto;
+	text-align: center;
+  justify-content: space-evenly;
+}
+nav > ul > li{
+  position: relative;
+  line-height:100px;
+  width:120px;
+}
+nav > ul > li > a{
+  transition: 0.2s;
+  display: block;
+}
+nav > ul > li > a:hover{color: #2b75e0;}
+.sub{
+  position: relative;
+  top:5px;
+  background-color:#5da1ff;
+  font-weight: lighter;
+  font-size: 15px;
+  z-index: 1000;
+}
+.sub > li{
+  line-height: 50px;
+  width:120px;
+}
+.sub > li > a{
+  color: #fff;
+  display: block;
+}
+.sub > li > a:hover{font-weight: bold;}
+.square{
+  position: absolute;
+  top:100px; left:0px;
+  width:100%; height:355px;
+  background: #5da1ff;
+  box-shadow: 5px 5px 5px rgba(100,100,100,.3);
+  z-index: 100;
+  /* display: none; */
+}
+
+
+
+
+
+
+
+
+
+/* 비디오 */
+.video{
+  position: relative;
+  width:100%; height:749px;
+  font-family: "나눔바른고딕";
+  overflow: hidden;
+  background: #333;
+}
+.video_txt{
+  position: relative;
+  top:50%; left:50%;
+  transform: translate(-50%,-50%);
+  width:100%; height:100%;
+  z-index: 100;
+  /* background: rgba(100,100,100,.5); */
+  text-align: center;
+}
+.video_txt > li:first-child{
+  font-size:20px;
+  line-height:60px;
+}
+.video_txt > li:nth-child(2){
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 70px;
+  height: 70px;
+}
+.video_txt > li:nth-child(3),
+.video_txt > li:last-child{
+  color:lightskyblue;
+  text-shadow: 1px 1px 1px #333;
+}
+.video_txt > li{
+  position: relative;
+  top:43%; left:50%;
+  transform: translate(-50%,-50%);
+  line-height:30px;
+  color: #fff;
+}
+video{
+  position: absolute;
+  top:0px;
+  /* width:100%; */
+  opacity: .7;
+}
+
+
+
+
+
+
+
+
+
+/* 진료정보 */
+.info{
+  width:100%;
+  height:700px;
+  text-align: center;
+}
+.info_inner{
+  width:1200px;
+  margin: 0px auto;
+}
+.info h4,
+.event > h4,
+.inside h4{
+  font-weight: lighter;
+  color: #2b75e0;
+  padding-top:80px;
+}
+.info h2,
+.event > h2,
+.inside h2{
+  font-size:30px;
+  line-height:80px;
+}
+.info h2 > span,
+.event span,
+.inside h2 > span{
+  font-weight: lighter;
+  font-size: 28px;
+}
+.info_con{
+  display: flex;
+  justify-content: space-between;
+}
+.info_con > li{
+  position: relative;
+  width:230px; height:400px;
+  background: #333;
+  overflow: hidden;
+  cursor: pointer;
+}
+.info_con > li img{
+  transition:0.3s;
+  opacity: 0.8;
+}
+.info_con > li:hover img{
+  opacity: 0.2;
+  transform: scale(1.1);
+}
+.info_con > li > a{display: block;}
+.info_con p{
+  position: relative;
+  top:-310px;
+  margin: 0px auto;
+  width:180px; height:75px;
+  font-family:'나눔바른고딕';
+  color:#fff;
+  line-height: 21px;
+  font-weight: lighter;
+  font-size: 13px;
+}
+.info_con p:nth-child(2){
+  font-size: 24px;
+  line-height: 30px;
+}
+.info_con p:nth-child(3){
+  height:80px;
+  text-shadow: 0.3px 0.3px 0.3px #2b75e0;
+}
+.info_con p:nth-child(4){
+  margin-top: 110px;
+  font-size: 10px;
+}
+.info_con01,
+.info_con02,
+.info_con03,
+.info_con04,
+.info_con05{opacity: 0;}
+
+
+
+
+
+
+
+
+
+/* 슬라이드 */
+.slide{
+  width:100%; height:500px;
+  margin: 0px auto;
+  overflow: hidden;
+  background-color: #4169e2;
+}
+.slide > ul{position:relative;}
+.slide > ul > li{
+  position: absolute;
+  width:1920px; height:100%;
+}
+.slide > ul > li:first-child{z-index:5;}
+.slide > ul > li:nth-child(2){z-index:4;}
+.slide > ul > li:nth-child(3){z-index:3;}
+.slide > ul > li:nth-child(4){z-index:2;}
+
+
+
+
+
+
+
+
+
+/* 의료진소개 */
+.doctor{
+  position: relative;
+  width:1200px; height:770px;
+  margin:0px auto;
+  text-align: center;
+}
+.doc_txt{opacity: 0;}
+.doc_txt > li{
+  position: relative;
+  top:50px;
+}
+.doc_txt > li:nth-child(2){
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 120px;
+}
+.doc_txt > li:nth-child(3){
+  z-index: 10;
+  font-family: '나눔바른고딕';
+}
+.doc_txt p{line-height:30px;}
+.doc_txt img{
+  position: absolute;
+  top:50%; left:50%;
+  transform: translate(-50%,-50%);
+  opacity: 0.5;
+}
+.doc_img{
+  position:absolute;
+  bottom:-5px;
+  z-index: 10;
+}
+.doctor > img{
+  position: absolute;
+  bottom:0px; left:-360px;
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+/* 이벤트 */
+.event{
+  position: relative;
+  width:1200px; height:650px;
+  margin:0px auto;
+  text-align: center;
+  overflow: hidden;
+}
+.event_more{
+  position: absolute;
+  right:30px; 
+  line-height:30px;
+  transition: 0.1s;
+  font-family: '나눔바른고딕';
+  font-size: 13px;
+}
+.event_more:hover{
+  color: #2b75e0;
+  font-weight: bold;
+}
+.event_img{
+  display: flex;
+  justify-content: space-around;
+  margin-top:50px;
+  width:1500px;
+}
+.event_img > li{
+  width:250px; height:305px;
+  overflow: hidden;
+}
+.event_img img{
+  width:250px; height:250px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.event_img img:hover{
+  transform: scale(1.06);
+  opacity: 0.9;
+}
+.event_img p:nth-child(2){
+  font-size:18px;
+  font-weight: bold;
+  line-height:30px;
+}
+.event_img p:last-child{
+  font-size: 13px;
+  line-height:20px;
+  font-family: '나눔바른고딕';
+}
+
+
+
+
+
+
+
+
+/* 내부 둘러보기 */
+.inside{
+  width:100%;
+  text-align: center;
+}
+.inside_inner{
+  width:1200px;
+  margin: 0px auto;
+  padding-bottom:80px;
+}
+.inside_img{
+  display: flex;
+  width: 1200px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.inside_img > li{}
+.inside_img > li > a{
+  width:380px; height:253.48px;
+}
+.inside_img > li img{
+  width:380px; height:253.48px;
+  padding:10px;
+  transition: 0.3s;
+  overflow: hidden;
+  opacity: 0;
+}
+.inside_img > li img:hover{transform: scale(1.05);}
+
+
+
+
+
+
+
+
+
+
+/* 진료시간 */
+.time{
+  width:100%; height:479px;
+  background:#2b75e0;
+  color:#fff;
+}
+.time_inner{
+  width:1000px; height:479px;
+  margin: 0px auto;
+  display: flex;
+}
+.time_inner > li:first-child{width:479px; height:479px;}
+.time_inner > li:last-child{
+  position: relative;
+  width:379px; height:379px;
+  margin-top: 50px;
+  margin-left:70px;
+  font-size: 36px;
+}
+.time_inner > li:last-child > img{width:35px;}
+.time_inner > li:last-child > p{
+  position: relative;
+  top:30px;
+  font-size:20px;
+  line-height:40px;
+  text-indent: 10px;
+}
+.time_inner > li:last-child > p:nth-child(7){
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 30px;
+  letter-spacing:3px;
+}
+.time_inner > li:last-child > a{
+  position: absolute;
+  bottom:0px; right:0px;
+  display: block;
+  color: #fff;
+  background: navy;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 5px 9px;
+  transition: 0.2s;
+}
+.time_inner > li:last-child > a:hover{
+  background: #c2dbff;
+  color: navy;
+  font-weight: bold;
+}
+hr{margin-top:10px;}
+
+
+
+
+
+
+
+
+
+/* 푸터 */
+footer{
+  width:100%; height:165px;
+  font-size: 14px;
+}
+footer > ul{
+  width:1000px;
+  display: flex;
+  margin: 0px auto;
+}
+footer > ul > li > img{padding:50px;}
+footer > ul > li{line-height:22px;}
+footer li:last-child{
+  margin-top:32.5px;
+  margin-left:24px;
+  height:100px;
+}
+footer > ul address{padding-bottom: 10px;}
+footer > ul > li > p{
+  font-size: 16px;
+  font-weight: bold;
+  color:#505050;
+}
